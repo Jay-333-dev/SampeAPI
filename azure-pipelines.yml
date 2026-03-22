@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: agenttest1
+  name: Selfhostedagent
   demands:
   - Agent.Name -equals Agent_test
 
