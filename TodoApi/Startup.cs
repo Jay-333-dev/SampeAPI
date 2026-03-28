@@ -43,6 +43,7 @@ namespace TodoApi
                     Description = "Todo API operations",
                     Version="1.0"
                 });
+                config.ResolveConflictingActions(apiDescriptions => apiDescriptions.First()); //This line
             });
 
             services.AddCors(config =>
